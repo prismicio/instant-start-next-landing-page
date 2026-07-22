@@ -1,0 +1,15 @@
+{
+	"repositoryName": "nextjs-starter-landing-page",
+	"documentAPIEndpoint": "https://nextjs-starter-landing-page.cdn.prismic.io/api/v2",
+	"libraries": ["./src/slices"],
+	"routes": [
+		{
+			"type": "homepage",
+			"path": "/"
+		},
+		{
+			"type": "page",
+			"path": "/:uid"
+		}
+	]
+}
