@@ -106,6 +106,23 @@ If you change or add to your page types, you'll need to update your route handli
 
 ## Documentation
 
+### Development checks
+
+Use a maintained Node.js 22 release (22.13 or newer) or Node.js 24 for the
+development checks. Next.js itself supports Node.js 20.9+, while the updated
+lint tooling requires Node.js `^20.19.0 || ^22.13.0 || >=24`.
+
+```sh
+npm ci
+npm run lint
+npm run build
+npm audit --audit-level=high
+```
+
+CI runs these checks on Node.js 22. The production build needs network access
+to the configured public Prismic repository and Google Fonts; no Prismic login
+or setup command is required for these checks.
+
 For the official Prismic documentation, see [Prismic's guide for Next.js](https://prismic.io/docs/nextjs) or the [technical references for the installed Prismic packages](https://prismic.io/docs/apis).
 
 ## License
