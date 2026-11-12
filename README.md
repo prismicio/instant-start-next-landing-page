@@ -116,7 +116,6 @@ lint tooling requires Node.js `^20.19.0 || ^22.13.0 || >=24`.
 npm ci
 npm run lint
 npm run build
-npm audit --audit-level=high
 ```
 
 CI runs these checks on Node.js 22. The production build needs network access
